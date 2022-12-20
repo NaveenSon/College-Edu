@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+}
+
+
+.nav {
+    position: fixed;
+    color: white;
+    background: #000;
+    width: 100%;
+    z-index: 5px;
+}
+
+.nav ul {
+    list-style: none;
+
+    display: flex;
+    padding: 10px 60px;
+    margin: 0px 15px;
+}
+
+.nav ul h1 {
+    word-spacing: 12px;
+}
+
+.nav ul li {
+    padding: 10px 90px;
+}
+
+.nav ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+.nav ul input {
+    text-align: center;
+    width: 100px;
+    border-radius: 12px;
+}
+
+.nav ul a:hover {
+    color: black;
+    background: yellow;
+    border-radius: 1.5px;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    background-size: cover;
+    text-align: center;
+    background-image: url(bg.bng.webp);
+
+    word-spacing: 5px;
+}
+
+.container h3 {
+    margin-top: 80px;
+}
+
+.container h3 a {
+    color: green;
+    text-decoration: none;
+
+    background: yellow;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.container h3 a:hover {
+    background: red;
+    color: black;
+}
+
+.container h1,
+h2 {
+
+    color: white;
+}
+
+.content img {
+    width: 130px;
+    height: auto;
+    margin: 130px;
+    padding: 10px;
+    justify-content: center;
+    float: inline-end;
+}
+
+.content .col a :last-child {
+
+    background: rgba(22, 22, 19, 0.692);
+}
+
+.footer {
+    text-align: center;
+    background: cyan;
+}
+
+.footer h3 {
+    padding-bottom: 10px;
+}
+
+.footer a {
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:848px) {
+
+    .nav nav ul h1 {
+        font-size: 15px;
+
+    }
+
+    .nav nav ul {
+        flex-direction: column;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .nav ul input {
+        width: 150px;
+
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container h3 a:hover {
+        background: red;
+        color: black;
+    }
+
+    .nav ul li a:hover {
+        color: white;
+
+        border-radius: 1.5px;
+
+    }
+
+}
